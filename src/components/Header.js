@@ -25,7 +25,11 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <Link to="/" className="logo">
-          <h1>Pizzeria<span>Elegante</span></h1>
+          <img src="/images/logo.jpg" alt="Totò Ristorante Pizzeria Logo" />
+          <div className="logo-text">
+            <h1>Totò</h1>
+            <p>Ristorante Pizzeria</p>
+          </div>
         </Link>
         
         <div className="mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -58,8 +62,8 @@ const Header = () => {
             </li>
           </ul>
           <div className="nav-cta">
-            <a href="tel:+391234567890" className="phone">
-              <Phone size={18} /> +39 123 456 7890
+            <a href="tel:0241516433" className="phone">
+              <Phone size={18} /> 02 415 1643
             </a>
             <button className="btn btn-order">Ordina Ora</button>
           </div>

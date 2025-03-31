@@ -31,12 +31,6 @@ const ContactPage = () => {
     });
   };
 
-  const handleLinkClick = (e) => {
-    e.preventDefault();
-    // Qui puoi aggiungere la logica per gestire il click (es. aprire un modal)
-    console.log('Link clicked');
-  };
-
   return (
     <div className="contact-page">
       <div className="contact-hero">
@@ -122,7 +116,7 @@ const ContactPage = () => {
                 </div>
                 <div className="contact-info-content">
                   <h3>Indirizzo</h3>
-                  <p>Via Roma 123, 20121 Milano, Italia</p>
+                  <p>Via Inganni, 83, 20147 Milano, Italia</p>
                 </div>
               </div>
               
@@ -132,8 +126,7 @@ const ContactPage = () => {
                 </div>
                 <div className="contact-info-content">
                   <h3>Telefono</h3>
-                  <p>+39 123 456 7890</p>
-                  <p>+39 098 765 4321</p>
+                  <p>02 415 1643</p>
                 </div>
               </div>
               
@@ -143,8 +136,8 @@ const ContactPage = () => {
                 </div>
                 <div className="contact-info-content">
                   <h3>Email</h3>
-                  <p>info@pizzeriaelegante.it</p>
-                  <p>prenotazioni@pizzeriaelegante.it</p>
+                  <p>info@totoristorante.it</p>
+                  <p>prenotazioni@totoristorante.it</p>
                 </div>
               </div>
               
@@ -154,9 +147,9 @@ const ContactPage = () => {
                 </div>
                 <div className="contact-info-content">
                   <h3>Orari</h3>
-                  <p>Lunedì - Giovedì: 12:00 - 22:00</p>
-                  <p>Venerdì - Sabato: 12:00 - 23:30</p>
-                  <p>Domenica: 12:00 - 22:30</p>
+                  <p>Lunedì: Chiuso</p>
+                  <p>Martedì - Venerdì: 12:00-14:30, 19:00-00:00</p>
+                  <p>Sabato - Domenica: 12:00-14:30, 19:00-00:00</p>
                 </div>
               </div>
               
@@ -176,7 +169,16 @@ const ContactPage = () => {
 
       <section className="contact-map">
         <div className="map-container">
-          <img src="/images/map.jpg" alt="Mappa" className="map-placeholder" />
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.9728896312293!2d9.12856841555771!3d45.45528487910091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c35b5c093731%3A0xa29df8a263ce4d23!2sVia%20Inganni%2C%2083%2C%2020147%20Milano%20MI%2C%20Italy!5e0!3m2!1sen!2sus!4v1648645278412!5m2!1sen!2sus" 
+            width="100%" 
+            height="450" 
+            style={{ border: 0 }} 
+            allowFullScreen="" 
+            loading="lazy" 
+            title="Totò Ristorante Pizzeria"
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </section>
 
@@ -186,7 +188,7 @@ const ContactPage = () => {
           <p className="reservation-text">Preferisci cenare nel nostro ristorante? Prenota un tavolo online o chiamaci!</p>
           <div className="reservation-buttons">
             <button className="btn">Prenota Online</button>
-            <a href="tel:+391234567890" className="btn btn-outline">Chiama Ora</a>
+            <a href="tel:0241516433" className="btn btn-outline">Chiama Ora</a>
           </div>
         </div>
       </section>

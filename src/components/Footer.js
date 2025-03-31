@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <h2>Pizzeria<span>Elegante</span></h2>
+            <h2>Totò<span>Ristorante</span></h2>
             <p>La vera pizza italiana dal 1985.</p>
             <div className="social-icons">
               <a href="javascript:void(0)" aria-label="Facebook"><Facebook size={16} /></a>
@@ -23,18 +23,18 @@ const Footer = () => {
             <div className="footer-section">
               <h3>Orari</h3>
               <ul>
-                <li>Lunedì - Giovedì: 12:00 - 22:00</li>
-                <li>Venerdì - Sabato: 12:00 - 23:30</li>
-                <li>Domenica: 12:00 - 22:30</li>
+                <li>Lunedì: Chiuso</li>
+                <li>Martedì - Venerdì: 12:00-14:30, 19:00-00:00</li>
+                <li>Sabato - Domenica: 12:00-14:30, 19:00-00:00</li>
               </ul>
             </div>
 
             <div className="footer-section">
               <h3>Contatti</h3>
               <ul>
-                <li><MapPin size={16} /> Via Roma 123, Milano</li>
-                <li><Phone size={16} /> +39 123 456 7890</li>
-                <li><Mail size={16} /> info@pizzeriaelegante.it</li>
+                <li><MapPin size={16} /> Via Inganni, 83, Milano</li>
+                <li><Phone size={16} /> 02 415 1643</li>
+                <li><Mail size={16} /> info@totoristorante.it</li>
               </ul>
             </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Pizzeria Elegante. Tutti i diritti riservati.</p>
+          <p>&copy; {new Date().getFullYear()} Totò Ristorante Pizzeria. Tutti i diritti riservati.</p>
           <div className="footer-legal">
             <a href="javascript:void(0)">Privacy Policy</a>
             <a href="javascript:void(0)">Termini e Condizioni</a>
