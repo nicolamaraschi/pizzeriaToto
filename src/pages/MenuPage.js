@@ -1,5 +1,6 @@
 // src/pages/MenuPage.js
 import React, { useState } from 'react';
+import { Wheat, Leaf, Heart } from 'lucide-react';
 import './MenuPage.css';
 
 const MenuPage = () => {
@@ -239,12 +240,6 @@ const MenuPage = () => {
                 <div className="menu-item-info">
                   <h3>{item.name}</h3>
                   <p>{item.description}</p>
-                  <div className="menu-item-footer">
-                    <span className="menu-item-price">€{item.price}</span>
-                    <button className="add-to-cart">
-                      <i className="fa-solid fa-plus"></i>
-                    </button>
-                  </div>
                 </div>
               </div>
             ))}
@@ -257,21 +252,21 @@ const MenuPage = () => {
           <div className="menu-info-grid">
             <div className="menu-info-item">
               <div className="menu-info-icon">
-                <i className="fa-solid fa-wheat-awn"></i>
+                <Wheat size={24} />
               </div>
               <h3>Impasto a Lunga Lievitazione</h3>
               <p>Il nostro impasto lievita per almeno 24 ore, risultando leggero e digeribile.</p>
             </div>
             <div className="menu-info-item">
               <div className="menu-info-icon">
-                <i className="fa-solid fa-leaf"></i>
+                <Leaf size={24} />
               </div>
               <h3>Ingredienti Selezionati</h3>
               <p>Utilizziamo solo prodotti DOP e IGP, selezionati dai migliori produttori italiani.</p>
             </div>
             <div className="menu-info-item">
               <div className="menu-info-icon">
-                <i className="fa-solid fa-heart"></i>
+                <Heart size={24} />
               </div>
               <h3>Opzioni per Tutti</h3>
               <p>Offriamo opzioni vegetariane, vegane e senza glutine. Chiedi al nostro staff!</p>
@@ -283,11 +278,10 @@ const MenuPage = () => {
       <section className="menu-cta">
         <div className="container">
           <div className="menu-cta-content">
-            <h2>Prenota un Tavolo o Ordina Online</h2>
+            <h2>Prenota un Tavolo</h2>
             <p>La vera esperienza della pizza italiana ti aspetta</p>
             <div className="menu-cta-buttons">
-              <a href="#" className="btn">Ordina Online</a>
-              <a href="#" className="btn btn-outline">Prenota un Tavolo</a>
+              <a href="tel:0241516433" className="btn">Chiama per Prenotare</a>
             </div>
           </div>
         </div>

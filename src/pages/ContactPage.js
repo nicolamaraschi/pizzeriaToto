@@ -185,10 +185,9 @@ const ContactPage = () => {
       <section className="reservation-cta section">
         <div className="container">
           <h2 className="section-title">Prenota un <span>Tavolo</span></h2>
-          <p className="reservation-text">Preferisci cenare nel nostro ristorante? Prenota un tavolo online o chiamaci!</p>
+          <p className="reservation-text">Preferisci cenare nel nostro ristorante? Chiamaci per prenotare!</p>
           <div className="reservation-buttons">
-            <button className="btn">Prenota Online</button>
-            <a href="tel:0241516433" className="btn btn-outline">Chiama Ora</a>
+            <a href="tel:0241516433" className="btn">Chiama per Prenotare</a>
           </div>
         </div>
       </section>

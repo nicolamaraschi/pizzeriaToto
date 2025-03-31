@@ -1,3 +1,4 @@
+// src/components/Header.js
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone } from 'lucide-react';
@@ -65,7 +66,7 @@ const Header = () => {
             <a href="tel:0241516433" className="phone">
               <Phone size={18} /> 02 415 1643
             </a>
-            <button className="btn btn-order">Ordina Ora</button>
+           
           </div>
         </nav>
       </div>

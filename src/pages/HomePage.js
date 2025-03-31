@@ -1,4 +1,4 @@
-// Modifica le importazioni all'inizio del file
+// src/pages/HomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Pizza, Flame, Utensils, Bike, Quote } from 'lucide-react';
@@ -14,7 +14,7 @@ const HomePage = () => {
           <p>Ingredienti freschi, ricette tradizionali, passione in ogni morso</p>
           <div className="hero-buttons">
             <Link to="/menu" className="btn">Scopri il Menu</Link>
-            <a href="#" className="btn btn-outline">Prenota un Tavolo</a>
+            <a href="tel:0241516433" className="btn btn-outline">Prenota Ora</a>
           </div>
         </div>
       </section>
@@ -219,10 +219,9 @@ const HomePage = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Pronto a gustare la migliore pizza di Milano?</h2>
-            <p>Ordina online o prenota un tavolo nel nostro ristorante</p>
+            <p>Chiamaci per prenotare un tavolo</p>
             <div className="cta-buttons">
-              <a href="#" className="btn">Ordina Online</a>
-              <a href="#" className="btn btn-outline">Prenota un Tavolo</a>
+              <a href="tel:0241516433" className="btn">Prenota Ora</a>
             </div>
           </div>
         </div>
